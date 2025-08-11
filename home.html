@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - ML Developer</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #1a1a1a;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hire-btn {
+      background-color: #ff4c1d;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Hero section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 100px;
+      gap: 410px;
+    }
+
+    .hero-text {
+      max-width: 80%;
+    }
+
+    .hero-text h5 {
+      color: #b35a30;
+      font-weight: 400;
+    }
+
+    .hero-text h2 {
+      font-size: 40px;
+      margin: 10px 0;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    .hero-buttons a {
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .hero-buttons .btn-primary {
+      background-color: #ff4c1d;
+      color: white;
+    }
+
+    .hero-buttons .btn-secondary {
+      border: 1px solid #aaa;
+      background-color: white;
+      color: #000;
+    }
+
+    /* Hero Image */
+    .hero-image {
+      position: relative;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 400px;
+      border-radius: 50%;
+      box-shadow: 0 0 30px rgba(255, 76, 29, 0.4);
+    }
+
+    .socials {
+      margin-top: 15px;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      font-size: 20px;
+    }
+
+    .socials a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .socials a:hover i {
+      color: #ff4c1d;
+    }
+
+    /* Responsive (Below 600px) */
+    @media (max-width: 600px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero-image img {
+        width: 250px;
+      }
+
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      /* Use items for rearranging sections */
+      item1, item2, item3, item4 {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Surya Narayanan V</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contect.html">Contact</a></li>
+    </ul>
+    <a href="data/surya resume.pdf" class="hire-btn">Download CV ⬇</a>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <item1 class="hero-text">
+      <h5>Hello I'm</h5>
+      <h2>Surya Narayanan V</h2>
+      <h2>ML-Developer</h2>
+    </item1>
+
+    <item2 class="hero-image">
+      <img src="images/suryaup1.png" alt="Profile Photo">
+      <div class="socials">
+        <a href="https://github.com/172Suryanarayanan" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/surya-narayanan-4a4435250" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:suryanarayanan122224@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:4"><i class="fas fa-phone-alt"></i></a>
+      </div>
+    </item2>
+  </div>
+
+  <div class="hero" style="flex-direction: column;">
+    <item3 class="hero-text">
+      <p>
+        I’m Suryanarayanan V, a passionate B.Tech student specializing in Artificial Intelligence, Machine Learning, and Full Stack Web Development at St. Joseph’s College of Engineering. I thrive at the intersection of AI, IoT, data science, and modern web technologies, with hands-on experience in building smart ML systems and scalable, user-friendly web applications. My expertise spans deep learning, NLP, reinforcement learning, and prompt engineering, alongside front-end and back-end development using HTML, CSS, JavaScript, React, Node.js, and databases like MySQL and MongoDB. I’ve worked with tools like PyTorch, TensorFlow, OpenCV, and YOLO, and have developed end-to-end solutions—from predictive maintenance in automobiles to AI-driven speech-to-text platforms. My internships at leading companies gave me real-world exposure in both AI model deployment and full stack architecture design. As a multiple-time hackathon finalist, I’m driven to create technology that not only works but delivers meaningful, real-world impact.
+      </p>
+    </item3>
+
+    <item4 class="hero-buttons">
+      <a href="about.html" class="btn-primary">About Me ➞</a>
+      <a href="data/surya resume.pdf" class="btn-secondary" download>Download CV ⬇</a>
+    </item4>
+  </div>
+
+</body>
+</html>
