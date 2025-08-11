@@ -140,22 +140,9 @@
       color: #ff4c1d;
     }
 
-    /* Responsive (Below 600px) */
+    /* Responsive for Mobile & Tablets (Below 600px) */
     @media (max-width: 600px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-      }
-
-      .hero-text {
-        max-width: 100%;
-      }
-
-      .hero-image img {
-        width: 250px;
-      }
-
+      /* Stack navbar */
       .navbar {
         flex-direction: column;
         text-align: center;
@@ -167,11 +154,35 @@
         gap: 10px;
       }
 
-      /* Use items for rearranging sections */
-      item1, item2, item3, item4 {
-        display: block;
-        width: 100%;
-        margin-bottom: 15px;
+      /* Stack hero section items */
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero-image img {
+        width: 250px;
+      }
+
+      /* Rearrange order for mobile: text → image → description → buttons */
+      item1 {
+        order: 1;
+      }
+      item2 {
+        order: 2;
+      }
+      item3 {
+        order: 3;
+        text-align: justify;
+      }
+      item4 {
+        order: 4;
       }
     }
   </style>
